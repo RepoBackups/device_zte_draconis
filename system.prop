@@ -50,7 +50,6 @@ mm.enable.smoothstreaming=true
 vidc.debug.level=1
 
 # Qualcomm
-ro.vendor.extension_library=/system/vendor/lib/libqc-opt.so
 ro.qualcomm.cabl=1
 ro.min_freq_0=787200
 ro.min_freq=787000
