@@ -208,3 +208,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Releasetools
 #TARGET_PROVIDES_RELEASETOOLS := true
 #TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/zte/draconis/releasetools/ota_from_target_files
+
+# ROM Optimizations
+USE_O3 := true
+STRICT := true
+GRAPHITE := true
+LTO := true

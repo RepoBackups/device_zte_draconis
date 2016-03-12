@@ -863,15 +863,10 @@ on property:persist.sys.rootagent=0
     stop rootagent
 
 on property:caketweaks.activate=1
-    write /sys/devices/system/cpu/cpufreq/uberdemand/sampling_rate 50000
-    write /sys/devices/system/cpu/cpufreq/uberdemand/up_threshold 90
-    write /sys/devices/system/cpu/cpufreq/uberdemand/io_is_busy 1
-    write /sys/devices/system/cpu/cpufreq/uberdemand/sampling_down_factor 2
-    write /sys/devices/system/cpu/cpufreq/uberdemand/down_differential 10
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor uberdemand
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor uberdemand
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor uberdemand
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor uberdemand
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor tripndroid
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor tripndroid
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor tripndroid
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor tripndroid
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
